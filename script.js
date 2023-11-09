@@ -22,3 +22,23 @@ const closeButton = document.getElementById('close-btn');
 closeButton.addEventListener('click', () => {
   tooglePage.style.display = 'none';
 });
+
+function goToTop() {
+  const scrollToTop = () => {
+      if (document.documentElement.scrollTop > 0) {
+          window.scrollBy(0, -30);
+          requestAnimationFrame(scrollToTop);
+      }
+  };
+
+  scrollToTop();
+}
+
+window.onscroll = function () {
+  const button = document.getElementById("gotoTop");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      button.style.display = "block";
+  } else {
+      button.style.display = "none";
+  }
+};
