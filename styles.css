@@ -8,7 +8,7 @@ body {
 @media only screen and (min-width: 600px) {
 
   .sidenav,
-  .nav-mob {
+  .nav-mob,.title-containerMob {
     display: none;
   }
 
@@ -203,7 +203,7 @@ nav {
   display: flex;
 }
 
-.title-container {
+.title-container,.title-containerMob{
   background-color: rgba(237, 28, 36, 0.980);
   height: 20%;
   width: 30%;
@@ -411,4 +411,9 @@ p {
 }
 #gotoTop:hover {
   background-color: #005596;
+}
+
+
+.arrow-right{
+  display: none;
 }

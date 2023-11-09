@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
 
   .main-nav .half-nav-first,
-  .half-nav-second {
+  .half-nav-second,.title-container {
     display: none;
   }
 
@@ -22,7 +22,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0, 85, 150, 0.9);
+    background-color: rgba(4, 6, 7, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -32,7 +32,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ED1C24;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
@@ -49,6 +49,15 @@
     margin-left: 50px;
   }
 
+  .carousel{
+    display: -webkit-box;
+    overflow: scroll;
+  }
+  .item{
+    width: 96%;
+  }
+
+
   @media screen and (max-height: 450px) {
     .sidenav {
       padding-top: 15px;
@@ -61,11 +70,13 @@
 
   .main-container {
     margin-top: 0;
+    display: block;
+    height: 35vh;
   }
 
   .main-container .img-container {
     margin: auto;
-    height: auto;
+    height: 35vh;
     width: auto;
     max-width: 100%;
     max-height: 100%;
@@ -81,25 +92,36 @@
     width: 100%;
   }
 
-  .main-container .title-container {
+  .main-container .title-containerMob {
+    position: absolute;
+    top: 20vh;
     height: 10vh;
     width: 50%;
     padding: 10px 10px 10px 20px;
     font-size: 18px;
+    background: rgba(0, 0, 0, 0.61);
+    mix-blend-mode: normal;
   }
 
-  .main-container .title-container h1,
+  .main-container .title-containerMob h1,
   p {
     font-size: medium;
-    height: 25%;
     padding: 5px 15px 10px 5px;
     left: 5px;
   }
+  .arrow-right{
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    font-size: xxx-large;
+    flex-direction: row;
+    align-content: end;
+  }
 
-  .about-us,
+  .about-us
   .who-are-we,
   .certificate-holder,
-  #grad1 {
+  .training {
     display: none;
   }
 }
