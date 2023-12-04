@@ -38,12 +38,12 @@
         </div><!--End of half-nav-first -->
         <div class="half-nav-second">
             <ul class="wrapper">
-                <li>
+                <li style="border-right: 1px solid #333;">
                     <span class="hotline">
-                        <p style="font-size: medium;border-right: 1px solid #333;">Hotline: +977-1-4522073</p>
+                        <p style="font-size: large;">Hotline: +977-1-4522073</p>
                     </span>
                 </li>
-                <li class="icon facebook">
+                <li class="icon facebook" style="margin-left: 23px;">
                     <span class="tooltip">Facebook</span>
                     <span><i class="fab fa-facebook-f"></i></span>
                 </li>
@@ -61,12 +61,12 @@
                 </li>
             </ul>
             <span class="hotline">
-                <hr style="margin-left: 27%;">
+                <hr style="margin-left: 22%;">
                 <p style="margin-right: 0;">Basundhara,Kathmandu,Nepal</p>
             </span>
             <nav id="navbar">
                 <ul>
-                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#about-us" onclick="goToAbout()">About Us</a></li>
                     <li><a href="#services">Service</a></li>
                     <li><a href="#training">Training</a></li>
                     <li><a href="#">Careers</a></li>
@@ -96,29 +96,34 @@
         </div>
     </div> <!-- End of .main-container-->
     <div id="grad1"></div>
-    <div class="about-us" id="about-us">
-        <div class="title">
-            <p id="title">Who are we?</p>
-            <br>
-            <p>
-                <b>Lakesha</b> is the only international security solutions provider in Nepal.
-                With our uniquely skilled manpower, integrated systems,leading-edge technology and qualified
-                management, with a comprehensive range of professional, effective and quality security solutions.
+    <aside id="about-us">
+        <div class="about-us" id="about-us">
+            <div class="title">
+                <p id="title">Who are we?</p>
+                <br>
+                <p class="original" style="margin: 0;">
+                    <b>Lakesha</b> is the only international security solutions provider in Nepal.
+                    With our uniquely skilled manpower, integrated systems,leading-edge technology and qualified
+                    management, with a comprehensive range of professional, effective and quality security solutions.
+                    <p class="dots" style="margin: 0;">...</p>
+                </p>
+                <p class="extra" style="margin: 0;">
+                    In a world of look-alike security companies, Garud Securities stands apart.
+                    Our years of experience helps us to provide clients with complete security solutions designed
+                    to respond to real threats and meet customer’s requirements. As we continue to pursue our corporate
+                    vision through dedicated procedures, new standards for excellence have been developed.
+                    We understand that security is no longer a mundane function, as now the threats are sophisticated
+                    and stakes are high. Garud Securities has elevated the standards required to negate the tide of
+                    crime and in keeping with the ever-changing threat.
+                <br><br>
+                <p class="extra" style="margin: 0;">
+                    Garud Securities prides itself on having solid infrastructure, sound procedures and skilled people all
+                    combining to enforce a high level of integrity, professionalism and quality of service that sets the
+                    foundation for our high standard of excellence.
+                </p>
             </p>
-            <p>
-                In a world of look-alike security companies, Garud Securities stands apart.
-                Our years of experience helps us to provide clients with complete security solutions designed
-                to respond to real threats and meet customer’s requirements. As we continue to pursue our corporate
-                vision through dedicated procedures, new standards for excellence have been developed.
-                We understand that security is no longer a mundane function, as now the threats are sophisticated
-                and stakes are high. Garud Securities has elevated the standards required to negate the tide of
-                crime and in keeping with the ever-changing threat.
-            </p>
-            <p>
-                Garud Securities prides itself on having solid infrastructure, sound procedures and skilled people all
-                combining to enforce a high level of integrity, professionalism and quality of service that sets the
-                foundation for our high standard of excellence.
-            </p>
+            <input type="checkbox" id="btn" />
+            <label for="btn"></label>
         </div>
         <div class="certificate-holder">
             <div class="img-holder">
@@ -126,8 +131,9 @@
             </div>
         </div>
     </div>
+</aside>
     <hr>
-
+    
     <div class="services" id="services">
         <h1>Services</h1>
         <div class="carousel">
@@ -140,7 +146,38 @@
                         solutions, which includes various services that are… <span id="open-toogle-page"
                             onclick="openTooglePage()" style="cursor: pointer; color: blue;">Read More</span>
                     <div id="toogle-page" class="hidden">
-                        <div class="strt" style=" height: 38px; width: 70vh;">
+                        <div class="strt" style=" width: 70vh;">
+                            <div class="toogle-box">
+                                <span class="name">Manned Guarding</span>
+                                <span class="close-btn" id="close-btn">&times;</span>
+                                <br><br>
+
+                                <hr>
+                                <div class="item-inner">
+                                    <p>Our team of top professionals combined with the use of advanced technology offer
+                                        man guarding
+                                        solutions, which includes various services that are.Our team of top
+                                        professionals combined with the use of advanced technology offer man guarding
+                                        solutions, which includes various services that are.Our team of top
+                                        professionals combined with the use of advanced technology offer man guarding
+                                        solutions, which includes various services that are
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div> <!-- Item -->
+            <div class="item">
+                <h3>MANNED GUARDING</h3>
+                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                    alt="MANNED GUARDING">
+                <div class="item-inner">
+                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding
+                        solutions, which includes various services that are… <span id="open-toogle-page"
+                            onclick="openTooglePage()" style="cursor: pointer; color: blue;">Read More</span>
+                    <div id="toogle-page" class="hidden">
+                        <div class="strt" style=" height: auto; width: 70vh;">
                             <div class="toogle-box">
                                 <span class="name">Manned Guarding</span>
                                 <span class="close-btn" id="close-btn">&times;</span>
@@ -188,28 +225,6 @@
                     </p>
                 </div>
             </div> <!-- Item -->
-            <div class="item">
-                <h3>MANNED GUARDING</h3>
-                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
-                    alt="MANNED GUARDING">
-                <div class="item-inner">
-                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding
-                        solutions, which includes various services that are… <span id="open-toogle-page"
-                            onclick="openTooglePage()" style="cursor: pointer; color: blue;">Read More</span>
-                    <div id="toogle-page" class="hidden">
-                        <div class="strt" style=" height: 38px; width: 70vh;">
-                            <div class="toogle-box">
-                                <span class="name">Manned Guarding</span>
-                                <span class="close-btn" id="close-btn">&times;</span>
-                            </div>
-                        </div>
-                    </div>
-                    </p>
-                </div>
-            </div> <!-- Item -->
-            <div class="arrow-right">
-                <i class="fas fa-sharp fa-solid fa-arrow-right"></i>
-            </div>
         </div>
     </div>
 
@@ -223,29 +238,37 @@
                 At Garud security, we strongly believe that well-trained and motivated people are the key to our
                 success. Our in-house training department is committed to groom the employees by providing them industry
                 and site specific training, to meet the individual requirements of our clients and the ever changing
-                industry needs.
-            </p>
-            <p>
+                industry needs. <br>
                 Induction and orientation: This is the first step towards training and we believe that it’s crucial for
                 all staff, regardless of their position category. It’s a great way of sharing essential information
                 about the company in general and it also gives the employees an understanding of their role and
                 responsibilities in the organization.
+                <span id="dots">...</span>
+                <br><br>
+                <span id="more">
+                    Basic training: Every employees undergoes basic security training course, which includes classroom
+                    and
+                    field training.
+                    <br>
+                    <br>
+                    Refresher training: It is conducted for employees to brush up on their skills that they have already
+                    developed. It also allows us to share any updates, short-term goals and objectives.
+                    <br>(Refresher training includes firefighting, first-aid etc.)
+                    <br><br>
+                    On job Training: We conduct OJT (On job Training) once in every six months for all our employees.
+                    This
+                    helps us evaluate and mentor them on a real time basis.
+                    <br>
+                    With the expertise of our trainers and the conducive environment within the company, we transform
+                    the
+                    potential employees into top quality professionals of the future.
+                </span>
             </p>
-            <p>
-                Basic training: Every employees undergoes basic security training course, which includes classroom and
-                field training.
-            </p>
-            <p>
-                Refresher training: It is conducted for employees to brush up on their skills that they have already
-                developed. It also allows us to share any updates, short-term goals and objectives.
-                <br>(Refresher training includes firefighting, first-aid etc.)
-            <p>
-                On job Training: We conduct OJT (On job Training) once in every six months for all our employees. This
-                helps us evaluate and mentor them on a real time basis.
-                <br>
-                With the expertise of our trainers and the conducive environment within the company, we transform the
-                potential employees into top quality professionals of the future.
-            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+
+
             <div class="img-holder-training">
                 <img src="./img/training.jpg" alt="training">
             </div>
@@ -258,6 +281,14 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        $('li a').on('click', function (e) {
+            var targetSec = $(this).text();
+            $('html, body').animate({
+                scrollTop: $('#' + targetSec).offset().top
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>

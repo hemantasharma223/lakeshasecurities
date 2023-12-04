@@ -51,12 +51,20 @@
 
   .carousel{
     display: -webkit-box;
+    position: relative;
     overflow: scroll;
   }
   .item{
     width: 96%;
   }
 
+  .title{
+    width: 96%;
+  }
+  .title p{
+    margin: auto;
+    padding: auto;
+  }
 
   @media screen and (max-height: 450px) {
     .sidenav {
@@ -72,6 +80,7 @@
     margin-top: 0;
     display: block;
     height: 35vh;
+    position: relative;
   }
 
   .main-container .img-container {
@@ -94,12 +103,14 @@
 
   .main-container .title-containerMob {
     position: absolute;
-    top: 20vh;
-    height: 10vh;
+    bottom: 0vh;
+    height: 13vh;
     width: 50%;
     padding: 10px 10px 10px 20px;
     font-size: 18px;
-    background: rgba(0, 0, 0, 0.61);
+    background: rgba(237, 28, 36, 0.880);
+    border-radius: 7px;
+    color: #fff;
     mix-blend-mode: normal;
   }
 
@@ -109,19 +120,31 @@
     padding: 5px 15px 10px 5px;
     left: 5px;
   }
-  .arrow-right{
-    display: flex;
-    position: absolute;
-    top: 20vh;
-    font-size: xxx-large;
-    flex-direction: row;
-    align-content: end;
-  }
-
-  .about-us
-  .who-are-we,
-  .certificate-holder,
-  .training {
+  .img-holder{
     display: none;
+   }
+  .about-us{
+    display: block;
   }
+  #more {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  button {
+    background-color: #005596;
+    color: white;
+    padding: 10px;
+    padding-bottom: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+    button:hover {
+      background-color: #ED1C24;
+    }
 }
