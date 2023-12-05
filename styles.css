@@ -345,6 +345,16 @@ input[type="checkbox"]:checked ~ label:before {
   display: inline;
 }
 
+#grad2 {
+  display: none;
+  height: 10px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: red;
+  background: rgb(11, 11, 115);
+  background: linear-gradient(90deg, rgba(11, 11, 115, 1) 12%, rgba(12, 12, 217, 1) 28%, rgba(85, 194, 246, 1) 46%, rgba(167, 6, 115, 1) 56%, rgba(245, 64, 113, 1) 66%, rgba(245, 50, 50, 0.9948354341736695) 81%, rgba(240, 29, 29, 1) 100%);
+}
+
 .services {
   width: 100%;
   height: 65vh;
@@ -390,7 +400,8 @@ p {
   background: none;
 }
 
-#toogle-page {
+#toogle-page,#toogle-page-second,#toogle-page-third,#toogle-page-fourth
+ {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -405,13 +416,12 @@ p {
 
 .toogle-box {
   display: block;
-  border: 2px solid rgba(150, 150, 150, 1);
   border: 4px solid rgba(150, 150, 150, 0.2);
   line-height: 30px;
-  padding: 10px;
+  padding: 0 10px;
   font-size: 16px;
   color: #000000;
-  margin-bottom: 13px;
+  margin: 0;
   clear: both;
   box-shadow: rgba(0, 0, 0, 0.6);
 }
@@ -419,6 +429,7 @@ p {
 .toogle-box .close-btn {
   float: right;
   cursor: pointer;
+  user-select: none;
   font-size: xx-large;
   font-weight: bolder;
 }
@@ -430,7 +441,7 @@ p {
 #more{
   display: none;
 }
-#myBtn{
+#moreBtn{
   margin: 0;
   background-color: #005596;
   color: #fff;
@@ -444,6 +455,7 @@ p {
 }
 
 .img-holder-training {
+  display: none;
   margin: 0px;
   width: 100%;
   
@@ -455,6 +467,59 @@ p {
   overflow: hidden;
   margin: 2px;
   border-radius: 5px;
+}
+
+.contact-us{
+  width: 100%;
+}
+.row1{
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #005596;
+}
+.row2{
+  display: flex;
+  width: 100%;
+  margin: 60px 0 20px 0;
+}
+.col1{
+  width: 33.33%;
+  border-right: 2px solid #005596;
+}
+.title-contact{
+  text-transform: uppercase;
+  font-size: x-large;
+  text-decoration: none;
+  color: #ED1C24;
+}
+.contact-us .row2 .col3 a:hover{
+  text-decoration: underline;
+}
+.col3 > a{
+  text-decoration: none;
+  color: #000;
+}
+.col2{
+  display: flex;
+  width: 66.66%;
+  color: #005596;
+  align-items: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Roboto', 'Sans-serif';
+  text-align: center;
+}
+.col3{
+  width: 33.33%;
+  border-right: 1px solid #005596;
+}
+.social-links > a > i{
+  text-decoration: none;
+  color: white;
+  background-color: #005596;
+  padding: 5px 7px;
+  border-radius: 2px;
+  margin-right: 5px;
 }
 
 #gotoTop {
