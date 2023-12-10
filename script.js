@@ -8,11 +8,11 @@ function closeNav() {
   document.getElementById("menu").style.display = "flex";
 }
 
-const grad = document.getElementById('grad2');
-const gradBtn = document.getElementById('btn');
-gradBtn.addEventListener ('click' , () => {
-  grad.style.display = 'inline';
-});
+// const grad = document.getElementById('grad2');
+// const gradBtn = document.getElementById('btn');
+// gradBtn.addEventListener ('click' , () => {
+//   grad.style.display = 'inline';
+// });
 
 
 const openButton = document.getElementById('open-toogle-page');
