@@ -82,7 +82,6 @@ function readMore() {
   var btnText = document.getElementById("moreBtn");
   var grad = document.getElementById("grad2");
   var trainingImg = document.getElementById('training-img');
-  var hr = document.getElementById('hr3');
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -90,13 +89,35 @@ function readMore() {
     moreText.style.display = "none";
     grad.style.display = "none";
     trainingImg.style.display = "none";
-    hr.style.display = "block";
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
-    hr.style.display = "none";
     grad.style.display = "block";
     trainingImg.style.display = "block";
   }
 }
+$(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+});
