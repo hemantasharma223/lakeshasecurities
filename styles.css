@@ -442,6 +442,7 @@ p {
   height: auto;
   margin: 2px;
   padding: 16px;
+  cursor: pointer;
 }
 
 .img-holder-training {
