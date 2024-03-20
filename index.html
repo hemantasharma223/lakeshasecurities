@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lakesha Securities</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mobstyle.css">
@@ -13,360 +14,382 @@
 </head>
 
 <body>
-    <div class="sidenav" id="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #fff;">&times;</a>
-        <a href="#about-us">About</a>
-        <a href="#services">Services</a>
-        <a href="#training">Training</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <div class="main-nav" id="main-nav">
-        <!-- nav bar for mobile devices -->
-        <div class="nav-mob">
-            <div class="nav-menu" id="menu">
-                <span onclick="openNav()"><i class="fa fa-bars"></i>
-                    <b>Menu</b>
-                </span>
-            </div>
-
-        </div> <!-- .nav-mob -->
-
-        <div class="half-nav-first">
-            <div class="logo">
-                <a href="index.html"><img src="./img/logos/LakeshaLogo_-01.png" alt="logo.png"></a>
-            </div>
-        </div><!--End of half-nav-first -->
-        <div class="half-nav-second">
-            <ul class="wrapper">
-                <li style="border-right: 1px solid #333;">
-                    <span class="hotline">
-                        <p style="font-size: large;">Hotline: +977-1-4522073</p>
-                    </span>
-                </li>
-                <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
-                    style="text-decoration: none;">
-                    <li class="icon facebook" style="margin-left: 23px;">
-                        <i class="fab fa-facebook-f social-links"></i>
-                    </li>
-                </a>
-                <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
-                    style="text-decoration: none;">
-                    <li class="icon twitter">
-                        <span class="tooltip">Twitter</span>
-                        <span><i class="fab fa-twitter"></i></span>
-                    </li>
-                </a>
-                <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
-                    style="text-decoration: none;">
-                    <li class="icon twitter">
-                        <span class="tooltip">Twitter</span>
-                        <span><i class="fab fa-linkedin"></i></span>
-                    </li>
-                </a>
-                <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
-                    style="text-decoration: none;">
-                    <li class="icon twitter">
-                        <span class="tooltip">Twitter</span>
-                        <span><i class="fab fa-instagram"></i></span>
-                    </li>
-                </a>
-            </ul>
-            <span class="hotline">
-                <hr style="margin-left: 9vh; width: 90%;">
-                <p style="margin-right: 0;">Basundhara,Kathmandu,Nepal</p>
-            </span>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#about-us" onclick="goToAbout()">About Us</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#training">Training</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                    <li style="border: none;"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div><!--End of half-nav-second -->
-    </div> <!--End of main-nav -->
-    <hr id="hr">
-    <div class="main-container" id="main-container">
-        <div class="title-container">
-            <div class="text-container">
-                <p>lakesha is the <br> only International <br>
-                    <b>security solutions <br> provider in Nepal </b>
-                </p>
-            </div>
+    <div class="body" id="body">
+        <div class="sidenav" id="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #fff;">&times;</a>
+            <a href="#about-us">About</a>
+            <a href="#services">Services</a>
+            <a href="#training">Training</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="img-container">
-            <img align="right" src="./img/guard1.jpg" alt="image">
-            <div class="title-containerMob">
+        <div class="main-nav" id="main-nav">
+            <!-- nav bar for mobile devices -->
+            <div class="nav-mob">
+                <div class="nav-menu" id="menu">
+                    <span onclick="openNav()"><i class="fa fa-bars"></i>
+                        <b>Menu</b>
+                    </span>
+                </div>
+                <div class="mbl-logo">
+                    <img src="./img/logos/LakeshaLogo_-01.png" alt="logo">
+                </div>
+
+            </div> <!-- .nav-mob -->
+
+            <div class="half-nav-first" id="navOnScroll">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logos/LakeshaLogo_-01.png" alt="logo.png"></a>
+                </div>
+            </div><!--End of half-nav-first -->
+            <div class="half-nav-second">
+                <ul class="wrapper" id="wrapper">
+                    <li style="border-right: 1px solid #333;">
+                        <span class="hotline">
+                            <p id="wrapperHotline">Hotline: +977-1-4522073</p>
+                        </span>
+                    </li>
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
+                        style="text-decoration: none;">
+                        <li class="icon facebook" style="margin-left: 23px;">
+                            <i class="fab fa-facebook-f social-links"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
+                        style="text-decoration: none;">
+                        <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
+                        style="text-decoration: none;">
+                        <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-linkedin"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" class="logos"
+                        style="text-decoration: none;">
+                        <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                    </a>
+                </ul>
+                <span class="hotline" id="wrapper">
+                    <!-- <hr style="margin-left: 8vh;"> -->
+                    <p style="margin-right: 0;">Basundhara,Kathmandu,Nepal</p>
+                </span>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="#about-us" onclick="goToAbout()">About Us</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li style="border: none;"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!--End of half-nav-second -->
+        </div> <!--End of main-nav -->
+        <hr style="margin: 0;" id="hr">
+        <div class="main-container" id="main-container">
+            <div class="title-container">
                 <div class="text-container">
                     <p>lakesha is the <br> only International <br>
                         <b>security solutions <br> provider in Nepal </b>
                     </p>
                 </div>
             </div>
-        </div>
-    </div> <!-- End of .main-container-->
-    <div id="grad1"></div>
-    <aside id="about-us">
-        <div class="about-us" id="about-us">
-            <div class="title">
-                <p id="title">Who are we?</p>
-                <br>
-                <p class="original" style="margin: 0;">
-                    <b>Lakesha</b> is the only international security solutions provider in Nepal.
-                    With our uniquely skilled manpower, integrated systems,leading-edge technology and qualified
-                    management, with a comprehensive range of professional, effective and quality security solutions.
-                </p>
-                <p>
-                    In a world of look-alike security companies, Lakesha Securities stands apart.
-                    Our years of experience helps us to provide clients with complete security solutions designed
-                    to respond to real threats and meet customer’s requirements. As we continue to pursue our corporate
-                    vision through dedicated procedures, new standards for excellence have been developed.
-                    We understand that security is no longer a mundane function, as now the threats are sophisticated
-                    and stakes are high. Lakesha Securities has elevated the standards required to negate the tide of
-                    crime and in keeping with the ever-changing threat.
+            <div class="img-container">
+                <img align="right" src="./img/guard1.jpg" alt="image">
+                <div class="title-containerMob">
+                    <div class="text-container">
+                        <p>lakesha is the <br> only International <br>
+                            <b>security solutions <br> provider in Nepal </b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of .main-container-->
+        <div id="grad1"></div>
+        <aside id="about-us">
+            <div class="about-us" id="about-us">
+                <div class="title">
+                    <p id="title">Who are we?</p>
                     <br>
-                <p>
-                    Lakesha Securities prides itself on having solid infrastructure, sound procedures and skilled people
-                    all
-                    combining to enforce a high level of integrity, professionalism and quality of service that sets the
-                    foundation for our high standard of excellence.
-                </p>
-                </p>
-            </div>
-            <div class="certificate-holder">
-                <div class="img-holder">
-                    <img src="./img/isocertified.png" alt="iso-certificate">
+                    <p class="original" style="margin: 0;">
+                        <b>Lakesha</b> is the only international security solutions provider in Nepal.
+                        With our uniquely skilled manpower, integrated systems,leading-edge technology and qualified
+                        management, with a comprehensive range of professional, effective and quality security
+                        solutions.
+                        <span id="dots-about">...</span>
+                        <br>
+                        <span id="more-text">
+                            In a world of look-alike security companies, Lakesha Securities stands apart.
+                            Our years of experience helps us to provide clients with complete security solutions
+                            designed
+                            to respond to real threats and meet customer’s requirements. As we continue to pursue our
+                            corporate
+                            vision through dedicated procedures, new standards for excellence have been developed.
+                            We understand that security is no longer a mundane function, as now the threats are
+                            sophisticated
+                            and stakes are high. Lakesha Securities has elevated the standards required to negate the
+                            tide of
+                            crime and in keeping with the ever-changing threat.
+                            <br>
+                            Lakesha Securities prides itself on having solid infrastructure, sound procedures and
+                            skilled people
+                            all
+                            combining to enforce a high level of integrity, professionalism and quality of service that
+                            sets the
+                            foundation for our high standard of excellence.
+                        </span>
+                    </p>
+                    <button onclick="readMoreAbout()" id="moreBtnAbt">Read more</button>
+                </div>
+                <div class="certificate-holder">
+                    <div class="img-holder">
+                        <img src="./img/isocertified.png" alt="iso-certificate">
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>
-    <hr id="hr2">
-    <div class="services" id="services">
-        <p>Services</p>
-        <div class="carousel">
-            <div class="item">
-                <h3>MANNED GUARDING</h3>
-                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
-                    alt="MANNED GUARDING">
-                <div class="item-inner">
-                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding
-                        solutions, which includes various services that are… <span id="open-toogle-page"
-                            onclick="openTooglePage1()" style="cursor: pointer; color: blue;">Read More</span>
-                    <div id="toogle-page" class="hidden">
-                        <div class="strt" style=" width: 70vh;">
-                            <div class="toogle-box">
-                                <span class="name">Manned Guarding</span>
-                                <span class="close-btn" id="close-btn">&times;</span>
-                                <br><br>
+        </aside>
+        <hr id="hr2">
+        <div class="services" id="services">
+            <p>Services</p>
+            <div class="carousel">
+                <div class="item">
+                    <h3>MANNED GUARDING</h3>
+                    <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                        alt="MANNED GUARDING">
+                    <div class="item-inner">
+                        <p>Our team of top professionals combined with the use of advanced technology offer man guarding
+                            solutions, which includes various services that are… <span id="open-toogle-page"
+                                onclick="openTooglePage1()" style="cursor: pointer; color: blue;">Read More</span>
+                        <div id="toogle-page" class="hidden">
+                            <div class="strt">
+                                <div class="toogle-box">
+                                    <span class="name">Manned Guarding</span>
+                                    <span class="close-btn" id="close-btn">&times;</span>
+                                    <br><br>
 
-                                <hr>
-                                <div class="item-inner">
-                                    <p>Our team of top professionals combined with the use of advanced technology offer
-                                        man guarding
-                                        solutions, which includes various services that are.Our team of top
-                                        professionals combined with the use of advanced technology offer man guarding
-                                        solutions, which includes various services that are.Our team of top
-                                        professionals combined with the use of advanced technology offer man guarding
-                                        solutions, which includes various services that are
+                                    <hr>
+                                    <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                                        alt="MANNED GUARDING">
+                                    <div class="item-inner">
+                                        <p>Our team of top professionals combined with the use of advanced technology
+                                            offer
+                                            man guarding
+                                            solutions, which includes various services that are.Our team of top
+                                            professionals combined with the use of advanced technology offer man
+                                            guarding
+                                            solutions, which includes various services that are.Our team of top
+                                            professionals combined with the use of advanced technology offer man
+                                            guarding
+                                            solutions, which includes various services that are
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        </p>
                     </div>
-                    </p>
-                </div>
-            </div> <!-- Item -->
-            <div class="item">
-                <h3>MANNED GUARDING</h3>
-                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
-                    alt="MANNED GUARDING">
-                <div class="item-inner">
-                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding
-                        solutions, which includes various services that are… <span id="open-toogle-page"
-                            onclick="openTooglePage2()" style="cursor: pointer; color: blue;">Read More</span>
-                    <div id="toogle-page-second" class="hidden">
-                        <div class="strt" style=" height: auto; width: 70vh;">
-                            <div class="toogle-box">
-                                <span class="name">Manned Guarding</span>
-                                <span class="close-btn" id="close-btn2">&times;</span>
-                                <br><br>
+                </div> <!-- Item -->
+                <div class="item">
+                    <h3>MANNED GUARDING</h3>
+                    <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                        alt="MANNED GUARDING">
+                    <div class="item-inner">
+                        <p>Our team of top professionals combined with the use of advanced technology offer man guarding
+                            solutions, which includes various services that are… <span id="open-toogle-page"
+                                onclick="openTooglePage2()" style="cursor: pointer; color: blue;">Read More</span>
+                        <div id="toogle-page-second" class="hidden">
+                            <div class="strt" style=" height: auto;">
+                                <div class="toogle-box">
+                                    <span class="name">Manned Guarding</span>
+                                    <span class="close-btn" id="close-btn2">&times;</span>
+                                    <br><br>
 
-                                <hr>
-                                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
-                                    alt="MANNED GUARDING">
-                                <div class="item-inner">
-                                    <p>Our team of top professionals combined with the use of advanced technology offer
-                                        man guarding
-                                        solutions, which includes various services that are.Our team of top
-                                        professionals combined with the use of advanced technology offer man guarding
-                                        solutions, which includes various services that are.Our team of top
-                                        professionals combined with the use of advanced technology offer man guarding
-                                        solutions, which includes various services that are
+                                    <hr>
+                                    <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                                        alt="MANNED GUARDING">
+                                    <div class="item-inner">
+                                        <p>Our team of top professionals combined with the use of advanced technology
+                                            offer
+                                            man guarding
+                                            solutions, which includes various services that are.Our team of top
+                                            professionals combined with the use of advanced technology offer man
+                                            guarding
+                                            solutions, which includes various services that are.Our team of top
+                                            professionals combined with the use of advanced technology offer man
+                                            guarding
+                                            solutions, which includes various services that are
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        </p>
                     </div>
-                    </p>
-                </div>
-            </div> <!-- Item -->
-            <div class="item">
-                <h3>MANNED GUARDING</h3>
-                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
-                    alt="MANNED GUARDING">
-                <div class="item-inner">
-                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding
-                        solutions, which includes various services that are… <span id="open-toogle-page"
-                            onclick="openTooglePage3()" style="cursor: pointer; color: blue;">Read More</span>
-                    <div id="toogle-page-third" class="hidden">
-                        <div class="strt" style=" height: 38px; width: 70vh;">
-                            <div class="toogle-box">
-                                <span class="name">Manned Guarding</span>
-                                <span class="close-btn" id="close-btn3">&times;</span>
+                </div> <!-- Item -->
+                <div class="item">
+                    <h3>MANNED GUARDING</h3>
+                    <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                        alt="MANNED GUARDING">
+                    <div class="item-inner">
+                        <p>Our team of top professionals combined with the use of advanced technology offer man guarding
+                            solutions, which includes various services that are… <span id="open-toogle-page"
+                                onclick="openTooglePage3()" style="cursor: pointer; color: blue;">Read More</span>
+                        <div id="toogle-page-third" class="hidden">
+                            <div class="strt" style=" height: 38px;">
+                                <div class="toogle-box">
+                                    <span class="name">Manned Guarding</span>
+                                    <span class="close-btn" id="close-btn3">&times;</span>
+                                </div>
                             </div>
                         </div>
+                        </p>
                     </div>
-                    </p>
-                </div>
-            </div> <!-- Item -->
-            <div class="item">
-                <h3>MANNED GUARDING</h3>
-                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
-                    alt="MANNED GUARDING">
-                <div class="item-inner">
-                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding
-                        solutions, which includes various services that are… <span id="open-toogle-page"
-                            onclick="openTooglePage4()" style="cursor: pointer; color: blue;">Read More</span>
-                    <div id="toogle-page-fourth" class="hidden">
-                        <div class="strt" style=" height: 38px; width: 70vh;">
-                            <div class="toogle-box">
-                                <span class="name">Manned Guarding</span>
-                                <span class="close-btn" id="close-btn4">&times;</span>
+                </div> <!-- Item -->
+                <div class="item">
+                    <h3>MANNED GUARDING</h3>
+                    <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg"
+                        alt="MANNED GUARDING">
+                    <div class="item-inner">
+                        <p>Our team of top professionals combined with the use of advanced technology offer man guarding
+                            solutions, which includes various services that are… <span id="open-toogle-page"
+                                onclick="openTooglePage4()" style="cursor: pointer; color: blue;">Read More</span>
+                        <div id="toogle-page-fourth" class="hidden">
+                            <div class="strt" style=" height: 38px;">
+                                <div class="toogle-box">
+                                    <span class="name">Manned Guarding</span>
+                                    <span class="close-btn" id="close-btn4">&times;</span>
+                                </div>
                             </div>
                         </div>
+                        </p>
                     </div>
-                    </p>
-                </div>
-            </div> <!-- Item -->
+                </div> <!-- Item -->
+            </div>
+
         </div>
 
-    </div>
-
-    <div class="clients" id="clients">
-        <!-- <div class="title-clients">
+        <div class="clients" id="clients">
+            <!-- <div class="title-clients">
             <p id="title">Clients:</p>
         </div> -->
-        <marquee direction="left" class="clients">
-            <span class="logos"><img src="./img/logos/google.png" alt="google"></span>
-            <span class="logos"><img src="./img/logos/nike.jpeg" alt="google"></span>
-            <span class="logos"><img src="./img/logos/pepsi.png" alt="google"></span>
-            <span class="logos"><img src="./img/logos/spotify.png" alt="google"></span>
-        </marquee>
-    </div>
-
-    <div class="training" id="training">
-        <div class="title" style="width: 100%;">
-            <p id="title">Training</p>
-
-            <p>
-                At Lakesha security, we strongly believe that well-trained and motivated people are the key to our
-                success. Our in-house training department is committed to groom the employees by providing them industry
-                and site specific training, to meet the individual requirements of our clients and the ever changing
-                industry needs. <br>
-                Induction and orientation: This is the first step towards training and we believe that it’s crucial for
-                all staff, regardless of their position category. It’s a great way of sharing essential information
-                about the company in general and it also gives the employees an understanding of their role and
-                responsibilities in the organization.
-                <span id="dots">...</span>
-                <br><br>
-                <span id="more">
-                    Basic training: Every employees undergoes basic security training course, which includes classroom
-                    and
-                    field training.
-                    <br>
-                    <br>
-                    Refresher training: It is conducted for employees to brush up on their skills that they have already
-                    developed. It also allows us to share any updates, short-term goals and objectives.
-                    <br>(Refresher training includes firefighting, first-aid etc.)
-                    <br><br>
-                    On job Training: We conduct OJT (On job Training) once in every six months for all our employees.
-                    This
-                    helps us evaluate and mentor them on a real time basis.
-                    <br>
-                    With the expertise of our trainers and the conducive environment within the company, we transform
-                    the
-                    potential employees into top quality professionals of the future.
-                </span>
-            </p>
-
-            <div class="img-holder-training" id="training-img">
-                <img src="./img/training.jpg" alt="training">
-            </div>
-            <button onclick="readMore()" id="moreBtn">Read more</button>
+            <marquee direction="left" class="clients">
+                <span class="logos"><img src="./img/logos/google.png" alt="google"></span>
+                <span class="logos"><img src="./img/logos/nike.jpeg" alt="google"></span>
+                <span class="logos"><img src="./img/logos/pepsi.png" alt="google"></span>
+                <span class="logos"><img src="./img/logos/spotify.png" alt="google"></span>
+            </marquee>
         </div>
-    </div>
-    <hr id="hr3" style="display: none;">
-    <div class="grad" id="grad2" style="display: none;"></div>
 
+        <div class="training" id="training">
+            <div class="title" style="width: 100%;">
+                <p id="title">Training</p>
 
-    <div class="goto-top">
-        <div class="top-button">
-            <button id="gotoTop" onclick="goToTop()"><i class="fas fa-sharp fa-solid fa-arrow-up fa-beat-fade"></i>
-            </button>
-        </div>
-    </div>
-    <footer id="contact">
-        <div class="row2">
-            <div class="col3">
-                <div class="logo-container">
-                    <img src="./img/logos/LakeshaLogo_-01.png" alt="Lakesha Securities">
+                <p>
+                    At Lakesha security, we strongly believe that well-trained and motivated people are the key to our
+                    success. Our in-house training department is committed to groom the employees by providing them
+                    industry
+                    and site specific training, to meet the individual requirements of our clients and the ever changing
+                    industry needs. <br>
+                    Induction and orientation: This is the first step towards training and we believe that it’s crucial
+                    for
+                    all staff, regardless of their position category. It’s a great way of sharing essential information
+                    about the company in general and it also gives the employees an understanding of their role and
+                    responsibilities in the organization.
+                    <span id="dots">...</span>
+                    <br>
+                    <span id="more">
+                        Basic training: Every employees undergoes basic security training course, which includes
+                        classroom
+                        and
+                        field training.
+                        <br>
+                        <br>
+                        Refresher training: It is conducted for employees to brush up on their skills that they have
+                        already
+                        developed. It also allows us to share any updates, short-term goals and objectives.
+                        <br>(Refresher training includes firefighting, first-aid etc.)
+                        <br><br>
+                        On job Training: We conduct OJT (On job Training) once in every six months for all our
+                        employees.
+                        This
+                        helps us evaluate and mentor them on a real time basis.
+                        <br>
+                        With the expertise of our trainers and the conducive environment within the company, we
+                        transform
+                        the
+                        potential employees into top quality professionals of the future.
+                    </span>
+                </p>
+
+                <div class="img-holder-training" id="training-img">
+                    <img src="./img/training.jpg" alt="training">
                 </div>
+                <button onclick="readMore()" id="moreBtn">Read more</button>
             </div>
-            <div class="col3">
+        </div>
+        <hr id="hr3" style="display: none;">
+        <div class="grad" id="grad2" style="display: none;"></div>
+
+
+        <div class="goto-top">
+            <div class="top-button">
+                <button id="gotoTop" onclick="goToTop()"><i class="fas fa-sharp fa-solid fa-arrow-up fa-beat-fade"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="column">
+                <img src="./img/logos/LakeshaLogo_-01.png" alt="Lakesha Securities">
+            </div>
+            <div class="column address">
                 <h2 style="margin-top: 0;color: #fff;">Corporate Office</h2>
-                <p><i class="fas fa-phone-alt" ></i> 014350639</p>
+                <p><i class="fas fa-phone-alt"></i> 014350639</p>
                 &MediumSpace;
                 <a href="mailto:xdyncorp@gmail.com"><i class="fas fa-envelope"></i>
-                xdyncorp@gmail.com</a>
+                    xdyncorp@gmail.com</a>
                 <br>
                 &MediumSpace;
                 <a href="https://www.google.com/maps/place/Lakesha+Security/@27.7428948,85.3288446,17z/data=!4m14!1m7!3m6!1s0x39eb19d495007a73:0x5f5dba70dd97c2a7!2sLakesha+Security!8m2!3d27.7428948!4d85.3314195!16s%2Fg%2F11fcv75kdf!3m5!1s0x39eb19d495007a73:0x5f5dba70dd97c2a7!8m2!3d27.7428948!4d85.3314195!16s%2Fg%2F11fcv75kdf?entry=ttu"
                     target="_blank">
-                    <i class="fas fa-map-marker-alt" ></i> Shreetol Marga,
+                    <i class="fas fa-map-marker-alt"></i> Shreetol Marga,
                     Basundhara<br>&MediumSpace;&MediumSpace;&MediumSpace; Basundhara-3, Kathmandu, Nepal
                 </a>
                 <br>
             </div> <!-- End of col3 -->
-            <div class="col3">
+            <div class="column">
                 <p>Or connect with us :</p>
                 <span class="social-links">
-                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" target="_blank" style="text-decoration: none;" >
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" target="_blank"
+                        style="text-decoration: none;">
                         <i class="fab fa-instagram  social-links"></i>
                         <label style="color: #fff;">&ThinSpace;Instagram</label>
                     </a>
                 </span>
                 <span class="social-links">
-                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" target="_blank" style="text-decoration: none;">
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" target="_blank"
+                        style="text-decoration: none;">
                         <i class="fab fa-youtube social-links"></i>
                         <label style="color: #fff;">YouTube</label>
                     </a>
                 </span>
                 <span class="social-links">
-                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" target="_blank" style="text-decoration: none;">
+                    <a href="https://www.facebook.com/people/Lakesha-Security-PvtLtd/100054410623591/" target="_blank"
+                        style="text-decoration: none;">
                         <i class="fab fa-facebook-f social-links"></i>
                         <label style="color: #fff;">&MediumSpace; Facebook</label>
                     </a>
                 </span>
                 <br>
             </div> <!-- End of col3 -->
+        </footer>
 
-
-        </div> <!-- End of row2 -->
-        </div>
-
-    </footer>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

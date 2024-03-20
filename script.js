@@ -1,11 +1,9 @@
 function openNav() {
   document.getElementById("sidenav").style.width = "250px";
-  document.getElementById("menu").style.display = "none";
 }
 
 function closeNav() {
   document.getElementById("sidenav").style.width = "0";
-  document.getElementById("menu").style.display = "flex";
 }
 
 // const grad = document.getElementById('grad2');
@@ -20,11 +18,13 @@ const tooglePage = document.getElementById('toogle-page');
 const tooglePage2 = document.getElementById('toogle-page-second');
 const tooglePage3 = document.getElementById('toogle-page-third');
 const tooglePage4 = document.getElementById('toogle-page-fourth');
+const addClass = document.getElementById('body')
 
 
 function openTooglePage1() {
   const openButton = document.getElementById('open-toogle-page');
   tooglePage.style.display = 'block';
+    // addClass.className += " bodyBlurr"   
 }
 function openTooglePage2() {
   const openButton = document.getElementById('open-toogle-page');
@@ -83,7 +83,7 @@ $(document).ready(function () {
 });
 window.onscroll = function () {
   const button = document.getElementById("gotoTop");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     button.style.display = "block";
   } else {
     button.style.display = "none";
@@ -109,5 +109,20 @@ function readMore() {
     moreText.style.display = "inline";
     grad.style.display = "block";
     trainingImg.style.display = "block";
+  }
+}
+function readMoreAbout() {
+  var dot = document.getElementById("dots-about");
+  var moreText = document.getElementById("more-text");
+  var btnText = document.getElementById("moreBtnAbt");
+
+  if (dot.style.display === "none") {
+    dot.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dot.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
   }
 }
